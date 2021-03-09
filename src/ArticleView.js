@@ -37,7 +37,7 @@ function ArticleView({ match, history }) {
   }
 
   const handleClick = (event, richTextElement) => {
-    // Checks if the user clicked on a link to a content item.
+   
     if (event.target.tagName === 'A' && event.target.hasAttribute('data-item-id')) {
       event.preventDefault();
       const id = event.target.getAttribute('data-item-id');
